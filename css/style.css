@@ -23,8 +23,7 @@ body {
   transform-origin: top left;
   height: 100vh;
   overflow: scroll;
-box-shadow: 0 0 30px rgba(0, 0, 0, 0.402);
-
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.402);
 }
 
 nav {
@@ -33,19 +32,18 @@ nav {
   left: 1rem;
   font-size: 2rem;
   z-index: -1;
-
-  .icon-container {
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 1rem;
-  }
-  a:hover {
-    cursor: pointer;
-    opacity: 0.8;
-  }
-  i {
-    color: white;
-  }
+}
+nav .icon-container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1rem;
+}
+nav a:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+nav i {
+  color: white;
 }
 
 .menu {
@@ -59,19 +57,19 @@ nav {
   left: -4rem;
   z-index: 1;
   transition: transform var(--animation);
-  :is(.open, .close) {
-    position: absolute;
-    bottom: 25%;
-    &:hover {
-      cursor: pointer;
-    }
-  }
-  .open {
-    right: 25%;
-  }
-  .close {
-    left: 25%;
-  }
+}
+.menu :is(.open, .close) {
+  position: absolute;
+  bottom: 25%;
+}
+.menu :is(.open, .close):hover {
+  cursor: pointer;
+}
+.menu .open {
+  right: 25%;
+}
+.menu .close {
+  left: 25%;
 }
 
 main {
@@ -80,36 +78,33 @@ main {
   margin-inline: auto;
   transform-origin: top-left;
   background-color: white;
-
-  h1,
-  h2 {
-    font-weight: 300;
-  }
-
-  h2 {
-    margin-bottom: 1rem;
-  }
-
-  .author {
-    display: block;
-    color: var(--gray);
-    font-style: italic;
-    margin-bottom: 2rem;
-  }
-
-  p {
-    line-height: 1.5;
-    margin-bottom: 1rem;
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  img {
-    width: 100%;
-    height: 60vh;
-    object-fit: cover;
-    object-position: 50% 80%;
-    margin-bottom: 1rem;
-  }
 }
+main h1,
+main h2 {
+  font-weight: 300;
+}
+main h2 {
+  margin-bottom: 1rem;
+}
+main .author {
+  display: block;
+  color: var(--gray);
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+main p {
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+main p:last-child {
+  margin-bottom: 0;
+}
+main img {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+  object-position: 50% 80%;
+  margin-bottom: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */
