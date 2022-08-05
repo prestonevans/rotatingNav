@@ -23,8 +23,8 @@ body {
   transform-origin: top left;
   height: 100vh;
   overflow: scroll;
-box-shadow: 0 0 30px rgba(0, 0, 0, 0.402);
-
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.402);
+  border-radius: 2rem;
 }
 
 nav {
@@ -39,10 +39,12 @@ nav {
     flex-direction: column-reverse;
     gap: 1rem;
   }
+
   a:hover {
     cursor: pointer;
     opacity: 0.8;
   }
+
   i {
     color: white;
   }
@@ -62,27 +64,29 @@ nav {
   :is(.open, .close) {
     position: absolute;
     bottom: 25%;
+
     &:hover {
       cursor: pointer;
     }
   }
+
   .open {
     right: 25%;
   }
+
   .close {
     left: 25%;
   }
 }
 
 main {
-  padding: 4rem 1rem 0;
+  padding: 4rem 1rem 2rem;
   max-width: 80ch;
   margin-inline: auto;
   transform-origin: top-left;
   background-color: white;
 
-  h1,
-  h2 {
+  :is(h1, h2) {
     font-weight: 300;
   }
 
@@ -100,6 +104,7 @@ main {
   p {
     line-height: 1.5;
     margin-bottom: 1rem;
+
     &:last-child {
       margin-bottom: 0;
     }

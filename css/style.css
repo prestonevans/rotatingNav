@@ -24,6 +24,7 @@ body {
   height: 100vh;
   overflow: scroll;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.402);
+  border-radius: 2rem;
 }
 
 nav {
@@ -73,14 +74,13 @@ nav i {
 }
 
 main {
-  padding: 4rem 1rem 0;
+  padding: 4rem 1rem 2rem;
   max-width: 80ch;
   margin-inline: auto;
   transform-origin: top-left;
   background-color: white;
 }
-main h1,
-main h2 {
+main :is(h1, h2) {
   font-weight: 300;
 }
 main h2 {
